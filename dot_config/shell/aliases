@@ -1,0 +1,25 @@
+# Aliases
+
+## Vi bindings
+set -o vi
+
+## Misc
+alias src="source ~/.bashrc"
+alias lg="lazygit"
+
+## EZA
+alias la="ls -a"
+
+## Git
+alias gaa="git add ."
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gcod="git checkout develop"
+alias gcom="git checkout main"
+alias gcb="git checkout -b"
+alias gst="git status"
+alias gl="git pull"
+alias gp="git push"
+alias gpuo="git push -u origin"
+alias gra="git restore ."
+alias grsa="git restore --staged ."
