@@ -1,12 +1,3 @@
-# See https://git-scm.com/docs/git-config
-
-[alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
-[init]
-	defaultBranch = master
 [pull]
 	rebase = true 			 # Rebase (instead of merge) on pull
 [push]
@@ -23,15 +14,9 @@
 	sort = -committerdate    # Sort branches by most recent commit first
 [tag]
 	sort = -version:refname  # Sort version numbers as you would expect
-[rerere]
-	enabled = true           # Record and reuse conflict resolutions
-	autoupdate = true        # Apply stored conflict resolutions automatically
-[user]
-	name = Geoffrey Hanson
-	email = geoffreykhanson@gmail.com
-[credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+# [rerere]
+# 	enabled = true           # Record and reuse conflict resolutions
+# 	autoupdate = true        # Apply stored conflict resolutions automatically
+[include]
+  path = ~/.gitconfig.local
+
