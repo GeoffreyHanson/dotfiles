@@ -3,6 +3,8 @@
 ## Actions
 alias srcb="source ~/.bashrc"
 alias srcz="source ~/.zshrc"
+alias ..="cd .."
+alias ...="cd ../.."
 
 ## Tools
 alias cm="chezmoi"
