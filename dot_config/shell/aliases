@@ -1,14 +1,23 @@
 # Aliases
 
-## Vi bindings
-set -o vi
+## Actions
+alias srcb="source ~/.bashrc"
+alias srcz="source ~/.zshrc"
 
-## Misc
-alias src="source ~/.bashrc"
+## Tools
+alias cm="chezmoi"
 alias lg="lazygit"
+alias n="nvim"
 
 ## EZA
-alias la="ls -a"
+alias ls="eza -lg --icons --header --group-directories-first"
+alias la="eza -lag --icons --header --group-directories-first"
+alias lr="eza -lTg -L 2 --icons --header --group-directories-first"
+alias lR="eza -lTg --icons --header --group-directories-first"
+alias lh="eza -dl --icons .* --group-directories-first"
+alias ll="eza -al --icons --group-directories-first"
+alias lS="eza -alF --icons --color=always --sort=size | grep -v /"
+alias lt="eza -al --icons --sort=modified"
 
 ## Git
 alias gaa="git add ."
@@ -23,3 +32,8 @@ alias gp="git push"
 alias gpuo="git push -u origin"
 alias gra="git restore ."
 alias grsa="git restore --staged ."
+
+## NPM
+alias nrd="npm run dev"
+alias nrb="npm run build"
+alias nrl="npm run lint"
