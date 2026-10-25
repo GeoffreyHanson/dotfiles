@@ -95,6 +95,7 @@ keybinds clear-defaults=true {
         bind "c" { CopyLastCommandOutput; SwitchToMode "normal"; }
         bind "e" { EditScrollback; SwitchToMode "normal"; }
         bind "s" { SwitchToMode "entersearch"; SearchInput 0; }
+        bind "y" { Copy; }
     }
     search {
         bind "c" { SearchToggleOption "CaseSensitivity"; }
@@ -102,6 +103,7 @@ keybinds clear-defaults=true {
         bind "o" { SearchToggleOption "WholeWord"; }
         bind "p" { Search "up"; }
         bind "w" { SearchToggleOption "Wrap"; }
+        bind "y" { Copy; }
     }
     session {
         bind "d" { Detach; }
