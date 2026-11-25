@@ -10,6 +10,7 @@ return {
         { "<leader>s", group = "search" },
         { "<leader>g", group = "git" },
         { "<leader>u", group = "ui" },
+        { "<leader><tab>", group = "tabs" },
       },
     },
 

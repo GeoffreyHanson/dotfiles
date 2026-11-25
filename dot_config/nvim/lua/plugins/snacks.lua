@@ -199,6 +199,20 @@ return {
         end,
         desc = "Git Diff",
       },
+      {
+        "<leader>gg",
+        function()
+          Snacks.lazygit({ cwd = vim.fs.root(0, ".git") or vim.fn.getcwd() })
+        end,
+        desc = "Lazygit (Root Dir)",
+      },
+      {
+        "<leader>gG",
+        function()
+          Snacks.lazygit()
+        end,
+        desc = "Lazygit (cwd)",
+      },
 
       -- UI
       {
